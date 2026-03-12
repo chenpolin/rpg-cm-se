@@ -57,12 +57,12 @@ def extract_rpg_maker_dialogue(file_path):
     return "\n".join(output)
 
 if __name__ == "__main__":
-    target_file = r"c:\Users\定淵\Documents\Games\Project202\data\Map012.json"
+    target_file = r"c:\Users\定淵\Documents\Games\Project202-CM+SE\data\Map002.json"
     result = extract_rpg_maker_dialogue(target_file)
     
-    output_path = r"C:\Users\定淵\Documents\Games\Project202\data\Map012_Dialogue_Extracted.md"
+    output_path = r"c:\Users\定淵\Documents\Games\Project202-CM+SE\data\Map002_Dialogue_Extracted.md"
     with open(output_path, 'w', encoding='utf-8') as f:
-        f.write("# Map012.json 劇情文本提取結果\n\n")
+        f.write("# Map002.json 劇情文本提取結果\n\n")
         f.write(result)
     
     print(f"Extraction complete. Saved to {output_path}")

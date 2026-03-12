@@ -64872,7 +64872,7 @@
           },
           "list": [
             { "code": 111, "indent": 0, "parameters": [ 1, 26, 0, 3, 0 ] },
-            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-玩家回答-正確" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-玩家回答-正確-找到火種-2" ] },
             { "code": 356, "indent": 1, "parameters": [ "Log 物品互動-得到聲之火種" ] },
             { "code": 101, "indent": 1, "parameters": [ "", 0, 0, 1 ] },
             { "code": 401, "indent": 1, "parameters": [ "你找到了第二回合的聲之火種！" ] },
@@ -64945,7 +64945,7 @@
           },
           "list": [
             { "code": 111, "indent": 0, "parameters": [ 1, 26, 0, 1, 0 ] },
-            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-玩家回答-正確" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-玩家回答-正確-找到正確火種" ] },
             { "code": 356, "indent": 1, "parameters": [ "Log 物品互動-得到聲之火種" ] },
             { "code": 101, "indent": 1, "parameters": [ "", 0, 0, 1 ] },
             { "code": 401, "indent": 1, "parameters": [ "你找到了第一回合的聲之火種！" ] },
@@ -65933,10 +65933,39 @@
             "tileId": 0
           },
           "list": [
+            { "code": 111, "indent": 0, "parameters": [ 1, 26, 0, 1, 1 ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-觀看羅盤圖片" ] },
+            { "code": 101, "indent": 1, "parameters": [ "", 0, 0, 2 ] },
+            { "code": 401, "indent": 1, "parameters": [ "Z放大圖片、A縮小圖片、方向鍵移動圖片" ] },
+            { "code": 231, "indent": 1, "parameters": [ 1, "img01", 0, 0, 100, 20, 100, 100, 255, 0 ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-開始顯示羅盤圖片" ] },
+            { "code": 112, "indent": 1, "parameters": [] },
+            { "code": 111, "indent": 2, "parameters": [ 11, "cancel" ] },
+            { "code": 113, "indent": 3, "parameters": [] },
+            { "code": 0, "indent": 3, "parameters": [] },
+            { "code": 412, "indent": 2, "parameters": [] },
+            { "code": 230, "indent": 2, "parameters": [ 1 ] },
+            { "code": 0, "indent": 2, "parameters": [] },
+            { "code": 413, "indent": 1, "parameters": [] },
+            { "code": 235, "indent": 1, "parameters": [ 1 ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-結束顯示羅盤圖片" ] },
+            { "code": 101, "indent": 1, "parameters": [ "Evil", 4, 0, 2 ] },
+            { "code": 401, "indent": 1, "parameters": [ "\\C[2]守林人：\\C[0]" ] },
+            { "code": 401, "indent": 1, "parameters": [ "在我們的世界，正前方定義為 0 度。" ] },
+            { "code": 401, "indent": 1, "parameters": [ "當你向右轉，角度會隨之增加。正右方是 90 度，" ] },
+            { "code": 401, "indent": 1, "parameters": [ "正後方是 180 度，而正左方則是 270 度。" ] },
+            { "code": 101, "indent": 1, "parameters": [ "Actor1", 0, 0, 2 ] },
+            { "code": 401, "indent": 1, "parameters": [ "\\C[2]主角：\\C[0]" ] },
+            { "code": 401, "indent": 1, "parameters": [ "（點頭）嗯，跟我學的一樣。" ] },
+            { "code": 401, "indent": 1, "parameters": [ "只要把頭頂當成圓心，四周就是一個平面圓圈。" ] },
+            { "code": 401, "indent": 1, "parameters": [ "0度看前面，90度看右邊...這比背解剖簡單多了。" ] },
+            { "code": 115, "indent": 1, "parameters": [] },
+            { "code": 0, "indent": 1, "parameters": [] },
+            { "code": 412, "indent": 0, "parameters": [] },
             { "code": 356, "indent": 0, "parameters": [ "Log NPC互動-觀看羅盤圖片" ] },
             { "code": 101, "indent": 0, "parameters": [ "", 0, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "Z放大圖片、A縮小圖片、方向鍵移動圖片" ] },
-            { "code": 231, "indent": 0, "parameters": [ 1, "img01", 0, 0, 0, 0, 100, 100, 255, 0 ] },
+            { "code": 231, "indent": 0, "parameters": [ 1, "img01", 0, 0, 100, 20, 100, 100, 255, 0 ] },
             { "code": 356, "indent": 0, "parameters": [ "Log NPC互動-開始顯示羅盤圖片" ] },
             { "code": 112, "indent": 0, "parameters": [] },
             { "code": 111, "indent": 1, "parameters": [ 11, "cancel" ] },
@@ -65978,6 +66007,7 @@
             { "code": 401, "indent": 0, "parameters": [ "\\C[2]守林人：\\C[0]" ] },
             { "code": 401, "indent": 0, "parameters": [ "對了，森林不安全，路上可能會有些魔物出現.." ] },
             { "code": 401, "indent": 0, "parameters": [ "希望你跑得夠快.." ] },
+            { "code": 356, "indent": 0, "parameters": [ "Log NPC互動-開始找火種" ] },
             { "code": 122, "indent": 0, "parameters": [ 26, 26, 0, 0, 1 ] },
             { "code": 0, "indent": 0, "parameters": [] }
           ],
@@ -66005,7 +66035,64 @@
       "x": 58,
       "y": 42
     },
-    null,
+    {
+      "id": 17,
+      "name": "EV017",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            { "code": 250, "indent": 0, "parameters": [ { "name": "Move1", "pan": 0, "pitch": 100, "volume": 90 } ] },
+            { "code": 201, "indent": 0, "parameters": [ 0, 12, 58, 48, 8, 0 ] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 4
+    },
     {
       "id": 18,
       "name": "EV018",
@@ -66170,7 +66257,6 @@
             "characterIndex": 4
           },
           "list": [
-            { "code": 356, "indent": 0, "parameters": [ "Log NPC互動-和守林人對話" ] },
             { "code": 101, "indent": 0, "parameters": [ "Evil", 4, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "\\C[2]守林人：\\C[0]" ] },
             { "code": 401, "indent": 0, "parameters": [ "看看我後方的石碑！這上面刻畫著世界的軸線。" ] },
@@ -66224,6 +66310,7 @@
           "list": [
             { "code": 111, "indent": 0, "parameters": [ 1, 26, 0, 2, 0 ] },
             { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-和守林人對話" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-找到火種後和守林人對話" ] },
             { "code": 101, "indent": 1, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]主角：\\C[0]" ] },
             { "code": 401, "indent": 1, "parameters": [ "看！我找回來了。" ] },
@@ -66257,6 +66344,7 @@
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]主角：\\C[0]" ] },
             { "code": 401, "indent": 1, "parameters": [ "好啦，既然這也是為了學分（誤），為了回家，" ] },
             { "code": 401, "indent": 1, "parameters": [ "我這就去把它挖出來！" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-開始找火種-2" ] },
             { "code": 122, "indent": 1, "parameters": [ 25, 25, 0, 0, 3 ] },
             { "code": 122, "indent": 1, "parameters": [ 26, 26, 0, 0, 3 ] },
             { "code": 0, "indent": 1, "parameters": [] },
@@ -66308,7 +66396,6 @@
             "characterIndex": 4
           },
           "list": [
-            { "code": 356, "indent": 0, "parameters": [ "Log NPC互動-和守林人對話" ] },
             { "code": 101, "indent": 0, "parameters": [ "Evil", 4, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "\\C[2]守林人：\\C[0]" ] },
             { "code": 401, "indent": 0, "parameters": [ "找到火種了嗎?" ] },
@@ -66361,6 +66448,7 @@
           "list": [
             { "code": 111, "indent": 0, "parameters": [ 1, 26, 0, 4, 0 ] },
             { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-和守林人對話" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-找到火種和守林人對話-2" ] },
             { "code": 101, "indent": 1, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]主角：\\C[0]" ] },
             { "code": 401, "indent": 1, "parameters": [ "我回來了！這是你要的 315 度 的火種。" ] },
@@ -66402,6 +66490,7 @@
             { "code": 101, "indent": 1, "parameters": [ "Evil", 4, 0, 2 ] },
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]守林人：\\C[0]" ] },
             { "code": 401, "indent": 1, "parameters": [ "沒錯，拜託你了。" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log NPC互動-開始找手稿" ] },
             { "code": 122, "indent": 1, "parameters": [ 25, 25, 0, 0, 5 ] },
             { "code": 0, "indent": 1, "parameters": [] },
             { "code": 412, "indent": 0, "parameters": [] },
@@ -66610,64 +66699,7 @@
       "x": 113,
       "y": 85
     },
-    {
-      "id": 21,
-      "name": "EV021",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Door2",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 7
-          },
-          "list": [
-            { "code": 250, "indent": 0, "parameters": [ { "name": "Move1", "pan": 0, "pitch": 100, "volume": 90 } ] },
-            { "code": 201, "indent": 0, "parameters": [ 0, 12, 58, 48, 8, 0 ] },
-            { "code": 0, "indent": 0, "parameters": [] }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 8,
-      "y": 4
-    },
+    null,
     {
       "id": 22,
       "name": "EV022",
@@ -69840,12 +69872,13 @@
             { "code": 356, "indent": 0, "parameters": [ "Log 物品互動-得到遺失手稿" ] },
             { "code": 101, "indent": 0, "parameters": [ "", 0, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "獲得遺失的手稿2：" ] },
-            { "code": 401, "indent": 0, "parameters": [ "『頭影效應 (Head Shadow)：對於頻率大於 1,500 Hz 的聲音" ] },
+            { "code": 401, "indent": 0, "parameters": [ "『頭影效應 (Head Shadow)：對於頻率大於1,500 Hz 的聲音" ] },
             { "code": 401, "indent": 0, "parameters": [ "，頭部會產生遮蔽作用，影響聲音傳遞。』" ] },
             { "code": 101, "indent": 0, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "\\C[2]主角：\\C[0]" ] },
             { "code": 401, "indent": 0, "parameters": [ "「頭影效應」...聽起來像是什麼帥氣的忍術。" ] },
-            { "code": 401, "indent": 0, "parameters": [ "簡單來說，就是我的頭太大（？），把高頻聲音擋住了吧？" ] },
+            { "code": 401, "indent": 0, "parameters": [ "簡單來說，就是我的頭太大（？），" ] },
+            { "code": 401, "indent": 0, "parameters": [ "把高頻聲音擋住了吧？" ] },
             { "code": 101, "indent": 0, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 0, "parameters": [ "\\C[2]主角：\\C[0]" ] },
             { "code": 401, "indent": 0, "parameters": [ "當高頻聲（大於 1500 Hz）從左邊來，" ] },
@@ -70308,7 +70341,7 @@
             { "code": 101, "indent": 1, "parameters": [ "Actor3", 6, 0, 2 ] },
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]監督官：\\C[0]" ] },
             { "code": 401, "indent": 1, "parameters": [ "很好！你要開啟進行考核了嗎?..." ] },
-            { "code": 356, "indent": 1, "parameters": [ "Log 監督官-開始考試" ] },
+            { "code": 356, "indent": 1, "parameters": [ "Log 監督官-開始考試-L1" ] },
             { "code": 356, "indent": 1, "parameters": [ "Log 監督官-第一題" ] },
             { "code": 101, "indent": 1, "parameters": [ "Actor3", 6, 0, 2 ] },
             { "code": 401, "indent": 1, "parameters": [ "\\C[2]監督官：\\C[0]" ] },
@@ -70328,12 +70361,13 @@
             { "code": 401, "indent": 2, "parameters": [ "很好！" ] },
             { "code": 401, "indent": 2, "parameters": [ "看看這個概念石板!" ] },
             { "code": 401, "indent": 2, "parameters": [ "已經刻上你所掌握的知識!" ] },
+            { "code": 356, "indent": 2, "parameters": [ "Log 監督官-開始看CM" ] },
             { "code": 101, "indent": 2, "parameters": [ "", 0, 0, 2 ] },
             { "code": 401, "indent": 2, "parameters": [ "操作說明：" ] },
             { "code": 401, "indent": 2, "parameters": [ "鍵盤：Z放大圖片、A縮小圖片、方向鍵移動圖片" ] },
             { "code": 401, "indent": 2, "parameters": [ "滑鼠：左鍵按下可移動、滾輪放大縮小" ] },
             { "code": 401, "indent": 2, "parameters": [ "平板手機：縮放手勢、雙擊手勢" ] },
-            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L1", 0, 0, 0, 0, 100, 100, 255, 0 ] },
+            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L1", 0, 0, -165, 0, 100, 100, 255, 0 ] },
             { "code": 112, "indent": 2, "parameters": [] },
             { "code": 111, "indent": 3, "parameters": [ 11, "cancel" ] },
             { "code": 113, "indent": 4, "parameters": [] },
@@ -70342,6 +70376,7 @@
             { "code": 230, "indent": 3, "parameters": [ 1 ] },
             { "code": 0, "indent": 3, "parameters": [] },
             { "code": 413, "indent": 2, "parameters": [] },
+            { "code": 356, "indent": 2, "parameters": [ "Log 監督官-結束看CM" ] },
             { "code": 235, "indent": 2, "parameters": [ 1 ] },
             { "code": 101, "indent": 2, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 2, "parameters": [ "\\C[2]主角：\\C[0]" ] },
@@ -70391,12 +70426,13 @@
             { "code": 401, "indent": 2, "parameters": [ "很好！" ] },
             { "code": 401, "indent": 2, "parameters": [ "看看這個概念石板!" ] },
             { "code": 401, "indent": 2, "parameters": [ "已經刻上你所掌握的知識!" ] },
+            { "code": 356, "indent": 2, "parameters": [ "Log 監督官-開始看CM" ] },
             { "code": 101, "indent": 2, "parameters": [ "", 0, 0, 2 ] },
             { "code": 401, "indent": 2, "parameters": [ "操作說明：" ] },
             { "code": 401, "indent": 2, "parameters": [ "鍵盤：Z放大圖片、A縮小圖片、方向鍵移動圖片" ] },
             { "code": 401, "indent": 2, "parameters": [ "滑鼠：左鍵按下可移動、滾輪放大縮小" ] },
             { "code": 401, "indent": 2, "parameters": [ "平板手機：縮放手勢、雙擊手勢" ] },
-            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L1", 0, 0, 0, 0, 100, 100, 255, 0 ] },
+            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L1", 0, 0, -165, 0, 100, 100, 255, 0 ] },
             { "code": 112, "indent": 2, "parameters": [] },
             { "code": 111, "indent": 3, "parameters": [ 11, "cancel" ] },
             { "code": 113, "indent": 4, "parameters": [] },
@@ -70405,6 +70441,7 @@
             { "code": 230, "indent": 3, "parameters": [ 1 ] },
             { "code": 0, "indent": 3, "parameters": [] },
             { "code": 413, "indent": 2, "parameters": [] },
+            { "code": 356, "indent": 2, "parameters": [ "Log 監督官-結束看CM" ] },
             { "code": 235, "indent": 2, "parameters": [ 1 ] },
             { "code": 101, "indent": 2, "parameters": [ "Actor1", 0, 0, 2 ] },
             { "code": 401, "indent": 2, "parameters": [ "\\C[2]主角：\\C[0]" ] },
@@ -70428,6 +70465,9 @@
             { "code": 101, "indent": 2, "parameters": [ "", 0, 0, 2 ] },
             { "code": 401, "indent": 2, "parameters": [ "【獲得道具：概念石板 1】" ] },
             { "code": 126, "indent": 2, "parameters": [ 31, 0, 0, 1 ] },
+            { "code": 101, "indent": 2, "parameters": [ "", 0, 0, 2 ] },
+            { "code": 401, "indent": 2, "parameters": [ "現在可以透過道具欄中使用【聲學筆記】來查閱內容!" ] },
+            { "code": 401, "indent": 2, "parameters": [ "操作方法：ESC > 道具 > 道具 > 概念石板" ] },
             { "code": 122, "indent": 2, "parameters": [ 25, 25, 0, 0, 7 ] },
             { "code": 115, "indent": 2, "parameters": [] },
             { "code": 0, "indent": 2, "parameters": [] },

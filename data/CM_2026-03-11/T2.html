@@ -357,6 +357,35 @@
             color: #475569;
             border-left: 4px solid var(--accent);
         }
+
+        /* 自我解釋提問樣式 */
+        .self-explanation {
+            background: linear-gradient(to right, #f8fafc, #eff6ff);
+            border-left: 5px solid #3b82f6;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .self-explanation h4 {
+            color: #1e40af;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .self-explanation h4::before {
+            content: "💡";
+            margin-right: 8px;
+        }
+
+        .self-explanation p {
+            margin-bottom: 0;
+            color: #334155;
+            font-weight: 500;
+        }
     </style>
 </head>
 
@@ -477,6 +506,10 @@
                     style D2a fill:#fef08a,stroke:#eab308
                 </div>
             </div>
+            <div class="self-explanation">
+                <h4>自我解釋提問</h4>
+                <p>想像你正在馬路上行走，右方有一台低頻引擎聲（低於 500 Hz）的貨車駛來。根據頭影效應的原理，為什麼你的左耳「無法」像感受高頻聲那樣明顯察覺到音量衰減？</p>
+            </div>
         </div>
 
         <!-- L2 Content -->
@@ -560,6 +593,10 @@
                     style D fill:#fef08a,stroke:#eab308
                     style E fill:#fef08a,stroke:#eab308
                 </div>
+            </div>
+            <div class="self-explanation">
+                <h4>自我解釋提問</h4>
+                <p>想像你正在設計一個人工外耳。如果你將耳殼設計成一個<strong>「完全平滑對稱的圓盤」</strong>，而非現在這種充滿凹凸的形狀，這會如何影響大腦判斷聲音來自「上方」還是「下方」的能力？請嘗試解釋這當中的邏輯關聯。</p>
             </div>
         </div>
 
@@ -670,6 +707,10 @@
                     style F3 fill:#bae6fd,stroke:#0284c7
                 </div>
             </div>
+            <div class="self-explanation">
+                <h4>自我解釋提問</h4>
+                <p>根據公式，若一個人的耳道因先天發育或手術變得比一般人更短，這會如何改變他對環境中「高頻」與「低頻」聲音的敏感度？請試著推論這對他聽取人類說話聲音（語音能量常集中在 2,000-4,000 Hz）可能產生的影響。</p>
+            </div>
         </div>
     </div>
 
@@ -743,6 +784,10 @@
                 style E fill:#fef08a,stroke:#eab308
             </div>
         </div>
+        <div class="self-explanation">
+            <h4>自我解釋提問</h4>
+            <p>假設你正聽著前方的一個高頻聲源（&gt;5 kHz），現在你緩緩將頭向左轉。根據 HRTF 的方位依賴性，請描述你的「右耳」接收到的頻率增益曲線會發生什麼樣的動態變化？這種變化如何幫助大腦意識到「聲音的位置改變了」？</p>
+        </div>
     </div>
 
     <!-- L5 Content -->
@@ -811,6 +856,10 @@
                 style C fill:#d9f99d,stroke:#65a30d,stroke-width:2px
                 style D fill:#fef08a,stroke:#eab308
             </div>
+        </div>
+        <div class="self-explanation">
+            <h4>自我解釋提問</h4>
+            <p>想像你現在正在進行水下聽力測試。當岸上的人對著水面下的你大聲喊叫時，即使他喊得很大聲，你聽到的聲音卻微弱得幾乎消失。請結合「阻抗不匹配」的原理，解釋為什麼這 99.9% 的能量會<strong>在水面（界面）</strong>就消失，而不是進入水中後才消失？</p>
         </div>
     </div>
 
@@ -935,6 +984,10 @@
                 style D fill:#fef08a,stroke:#eab308,stroke-width:2px
             </div>
         </div>
+        <div class="self-explanation">
+            <h4>自我解釋提問</h4>
+            <p>想像一個穿著「平底運動鞋」的人與一個穿著「尖細高跟鞋」的人，兩人的體重（作用力）完全相同。當他們分別踩在你腳上時，為什麼高跟鞋會讓你感到劇痛？請利用這個類比，解釋中耳如何只靠「改變面積」就能讓聲音足以推動沉重的耳蝸液。</p>
+        </div>
     </div>
 
     <!-- L7 Content -->
@@ -1018,6 +1071,10 @@
                 style D fill:#fef08a,stroke:#eab308
                 style E fill:#fef08a,stroke:#eab308,stroke-width:2px
             </div>
+        </div>
+        <div class="self-explanation">
+            <h4>自我解釋提問</h4>
+            <p>如果一位患者因為中耳炎導致中耳腔內積滿了液體（非空氣），這會如何改變該空間原本在 800 Hz 附近的共振特性？請嘗試從「介質改變」的角度，推論為什麼這會讓患者聽到的低頻聲音變得特別模糊？</p>
         </div>
     </div>
 

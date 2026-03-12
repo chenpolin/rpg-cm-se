@@ -16,7 +16,7 @@
  *
  * @param resultVariable
  * @text 結果變數 ID
- * @desc 儲存傳送結果的變數 ID (1=成功, 0=失敗，預設為 81)
+ * @desc 儲存傳送結果的變數 ID (1=成功, 2=用戶關閉, 0=失敗/處理中)
  * @type number
  * @default 81
  *
@@ -43,7 +43,8 @@
         _Game_Interpreter_pluginCommand.call(this, command, args);
 
         if (command === 'SEInput') {
-            const questionId = args[0] || "SEQ1"; // 預設為 SEQ1
+            const questionId = args[0] || "SEQ1"; // 第一個參數為題號
+            const questionText = args.slice(1).join(' '); // 其後所有參數合併為題目內容
             const studentId = $gameVariables.value(idVariable) || "Unknown";
             const interpreter = this;
 
@@ -52,25 +53,50 @@
             backdrop.style.cssText = 'position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);z-index:99;';
 
             const container = document.createElement('div');
-            container.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:25px;background:rgba(20,20,20,0.9);border:2px solid gold;border-radius:15px;z-index:100;width:350px;text-align:center;';
+            container.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:25px;background:rgba(20,20,20,0.95);border:2px solid gold;border-radius:15px;z-index:100;width:450px;text-align:center;box-shadow: 0 0 20px rgba(0,0,0,0.5);';
 
             const title = document.createElement('div');
-            title.style.cssText = 'color:white;margin-bottom:15px;font-weight:bold;font-size:18px;';
-            title.innerText = "請寫下您的想法";
+            title.style.cssText = 'color:gold;margin-bottom:15px;font-weight:bold;font-size:20px;letter-spacing:2px;';
+            title.innerText = "自我解釋練習";
+
+            const questionDiv = document.createElement('div');
+            questionDiv.style.cssText = 'color:white;background:rgba(255,255,255,0.1);padding:15px;margin-bottom:20px;border-radius:8px;text-align:left;line-height:1.6;font-size:16px;border-left:4px solid gold;';
+            questionDiv.innerText = questionText || "請根據目前的學習進度，寫下您的想法。";
 
             const inputElement = document.createElement('textarea');
             inputElement.style.cssText = 'width:100%;height:150px;padding:10px;font-size:16px;border-radius:5px;border:none;';
             inputElement.placeholder = "請寫下您的想法...(最少50字)";
 
+            const buttonContainer = document.createElement('div');
+            buttonContainer.style.cssText = 'margin-top:20px;display:flex;justify-content:space-around;gap:10px;';
+
             const buttonElement = document.createElement('button');
-            buttonElement.style.cssText = 'margin-top:20px;padding:10px 30px;font-size:18px;cursor:pointer;background:gold;color:black;border:none;border-radius:5px;font-weight:bold;';
+            buttonElement.style.cssText = 'flex:1;padding:12px;font-size:16px;cursor:pointer;background:gold;color:black;border:none;border-radius:5px;font-weight:bold;transition:0.2s;';
             buttonElement.innerText = "提交並繼續";
 
+            const closeButton = document.createElement('button');
+            closeButton.style.cssText = 'flex:1;padding:12px;font-size:16px;cursor:pointer;background:#555;color:white;border:none;border-radius:5px;font-weight:bold;transition:0.2s;';
+            closeButton.innerText = "取消關閉";
+
             container.appendChild(title);
+            container.appendChild(questionDiv);
             container.appendChild(inputElement);
-            container.appendChild(buttonElement);
+            buttonContainer.appendChild(buttonElement);
+            buttonContainer.appendChild(closeButton);
+            container.appendChild(buttonContainer);
             document.body.appendChild(backdrop);
             document.body.appendChild(container);
+
+            const finishProcess = () => {
+                if (document.body.contains(container)) document.body.removeChild(container);
+                if (document.body.contains(backdrop)) document.body.removeChild(backdrop);
+                interpreter.setWaitMode('');
+            };
+
+            closeButton.onclick = () => {
+                $gameVariables.setValue(resultVariableId, 2); // 2 = 未紀錄關閉
+                finishProcess();
+            };
 
             // 阻止事件冒泡，防止觸發遊戲地圖移動
             const stopPropagation = (event) => event.stopPropagation();
@@ -145,11 +171,7 @@
                         });
                 };
 
-                const finishProcess = () => {
-                    document.body.removeChild(container);
-                    document.body.removeChild(backdrop);
-                    interpreter.setWaitMode('');
-                };
+                // 這裡的 finishProcess 已經搬移到外層作用域
 
                 // 開始第一次傳送
                 sendWithRetry();

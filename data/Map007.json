@@ -2988,6 +2988,57 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 35,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People3",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 5
+          },
+          "list": [
+            { "code": 101, "indent": 0, "parameters": [ "People3", 6, 0, 2 ] },
+            { "code": 401, "indent": 0, "parameters": [ "\\C[2]工匠・赫茲：\\C[0]" ] },
+            { "code": 401, "indent": 0, "parameters": [ "監督官就在旁邊等你了" ] },
+            { "code": 115, "indent": 0, "parameters": [] },
+            { "code": 0, "indent": 0, "parameters": [] }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 8,
@@ -3712,7 +3763,7 @@
             { "code": 401, "indent": 2, "parameters": [ "鍵盤：Z放大、A縮小、方向鍵移動圖片" ] },
             { "code": 401, "indent": 2, "parameters": [ "滑鼠：左鍵按下可移動、滾輪放大縮小" ] },
             { "code": 401, "indent": 2, "parameters": [ "平板手機：縮放手勢、雙擊手勢" ] },
-            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L4", 0, 0, 0, 0, 100, 100, 255, 0 ] },
+            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L4", 0, 0, -165, -800, 100, 100, 255, 0 ] },
             { "code": 112, "indent": 2, "parameters": [] },
             { "code": 111, "indent": 3, "parameters": [ 11, "cancel" ] },
             { "code": 113, "indent": 4, "parameters": [] },
@@ -3779,7 +3830,7 @@
             { "code": 401, "indent": 2, "parameters": [ "鍵盤：Z放大、A縮小、方向鍵移動圖片" ] },
             { "code": 401, "indent": 2, "parameters": [ "滑鼠：左鍵按下可移動、滾輪放大縮小" ] },
             { "code": 401, "indent": 2, "parameters": [ "平板手機：縮放手勢、雙擊手勢" ] },
-            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L4", 0, 0, 0, 0, 100, 100, 255, 0 ] },
+            { "code": 231, "indent": 2, "parameters": [ 1, "CM_L4", 0, 0, -165, -800, 100, 100, 255, 0 ] },
             { "code": 112, "indent": 2, "parameters": [] },
             { "code": 111, "indent": 3, "parameters": [ 11, "cancel" ] },
             { "code": 113, "indent": 4, "parameters": [] },
